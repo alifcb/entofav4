@@ -1,0 +1,27 @@
+<div   class="gridListdemoBasicUsage padd-65" style=" background-color: #6CF"  ng-controller="help1" >
+<md-content class="main_b marg-t20" >
+  
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+     <img ng-show="ones"  src="img/help.jpg">
+     <img ng-show="twos" ng-hide="true" src="img/help2.jpg">
+     <img ng-show="threes" ng-hide="true" src="img/help3.jpg">
+</section>
+
+
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+<md-button  id="endss" style="display:block" class="md-raised" ng-show="ones"  ng-click="next('one')">بعدی</md-button>
+<md-button  id="endss" style="display:block" class="md-raised" ng-show="twos" ng-hide="true" ng-click="next('two')">بعدی</md-button>
+
+<md-button  id="endss" style="display:block" class="md-raised"  ng-click="go(listid)">برای نمایش لیست کلیک کنید</md-button>
+<p ng-show="ones" class="padding15 color-wihte marg-0"><span>راهنما 1:</span> <br>
+در مرحله بعد لیست مخاطبان تبدیل شده به شما نمایش داده خواهد شد.
+</p>
+<p ng-show="twos" class="padding15 color-wihte marg-0"><span>راهنما 2:</span> <br>
+در این مرحله شما میتوانید مخاطبانی که مایل به تبدیل آنها هستید را انتخاب نموده. در صورت نیاز املای آنها را ویرایش نمایید.</p>
+<p ng-show="threes" class="padding15 color-wihte marg-0"><span>راهنما 3:</span> <br>
+با انتخاب دکمه نارنجی رنگ سمت چپ پایین صفحه می توانید مخاطبان انتخاب شده را به فارسی تبدیل نمایید. در این مرحله لطفا تا پایان تبدیل و نمایش پیام اتمام تبدیل منتظر بمانید.</p>
+</section>
+
+</md-content>
+
+</div>
